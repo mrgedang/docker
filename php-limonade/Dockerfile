@@ -10,9 +10,9 @@ RUN apk update
 RUN apk upgrade
 
 # Install nginx, php7-fpm and git
-RUN apk add nginx php7-session php7-fpm git
+RUN apk add nginx php7-session php7-json php7-fpm git
 
-# Create pid file
+# Create folder for pid file
 RUN mkdir -p /run/nginx
 
 # Creata web directory and copy index.php
