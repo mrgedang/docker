@@ -24,6 +24,11 @@ COPY index.php /var/www/aye/
 RUN rm -f /etc/nginx/conf.d/default.conf
 COPY myapps.conf /etc/nginx/conf.d/
 
+# Display logging
+RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
+RUN ln -sf /dev/stderr /var/log/php7/error.log
+
 # Add script to run services
 ADD start.sh /start.sh
 
