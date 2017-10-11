@@ -5,12 +5,8 @@ MAINTAINER Muhammad Romadi Siregar <mromadisiregar@gmail.com>
 LABEL version="1.0"
 LABEL description="Sample RESTful API with limonade framework"
 
-# Update and upgrade
-RUN apk update
-RUN apk upgrade
-
 # Install nginx, php7-fpm and git
-RUN apk add nginx php7-session php7-json php7-fpm git
+RUN apk add --no-cache nginx php7-session php7-json php7-fpm git
 
 # Create folder for pid file
 RUN mkdir -p /run/nginx
