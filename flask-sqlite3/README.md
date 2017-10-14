@@ -1,10 +1,11 @@
-# Flask with sqlite3
+## Flask with sqlite3
 
 This is simple counter application, using flask microframework and sqlite3 to save hit number.
 Before run this code, better clear your docker system.
+
 ---
 
-**How to run this code?
+**How to run this code?**
 ```
 ~ docker system prune -f
 ~ docker-compose up --build
@@ -20,7 +21,7 @@ web_1  |  * Debugger is active!
 web_1  |  * Debugger PIN: 229-202-749
 ```
 
-**Check the counter
+**Check the counter**
 ```
 ~curl 172.19.0.2:5000    
 Hello World! I have been seen 1 times.
