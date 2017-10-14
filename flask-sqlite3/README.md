@@ -23,7 +23,7 @@ web_1  |  * Debugger PIN: 229-202-749
 
 **Check the counter**
 ```
-~curl 172.19.0.2:5000    
+~ curl 172.19.0.2:5000    
 Hello World! I have been seen 1 times.
 ~ curl 172.19.0.2:5000
 Hello World! I have been seen 2 times.
