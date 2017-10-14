@@ -13,13 +13,14 @@ def hello():
 	c = con.cursor()
 	try:  
 	  c.execute('CREATE TABLE counters (id INTEGER PRIMARY KEY AUTOINCREMENT, waktu INTEGER)')
-	except e:
+	except:
 	  pass
 	finally:
 	  c.execute('SELECT waktu from counters where id="1"')
 	  count = c.fetchone()
 	  if count == None:
-	    c.execute('INSERT INTO counters(waktu) values("0")')
+	    c.execute('INSERT INTO counters(waktu) values("1")')
+	    upd = 1
 	  elif count[0] == None:
 	    pass
 	  else:
