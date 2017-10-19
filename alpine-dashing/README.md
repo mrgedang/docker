@@ -6,7 +6,7 @@ This Dockerfile will build dashing image from alpine linux. For sample i create 
 
 **How to run this code?**
 ```
-~ docker build mrsiregar/alpine-dashing
+~ docker build mrsiregar/alpine-dashing .
 ```
 
 **Check the mentions**
