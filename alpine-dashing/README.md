@@ -14,5 +14,5 @@ This Dockerfile will build dashing image from alpine linux. For sample i create 
 ~ docker run mrsiregar/alpine-dashing
 ```
 
-Then open http://<container-ip-address>:3030/
+Then open http://container-ip-address:3030/
 
