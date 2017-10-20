@@ -10,7 +10,7 @@ twitter = Twitter::REST::Client.new do |config|
   config.access_token_secret = 'YRHkrTo7p5Xw7xUHno4VQU6oWlF7WD5iqFiv4omkDQHxW'
 end
 
-search_term = URI::encode('docker')
+search_term = URI::encode('#docker')
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   begin
