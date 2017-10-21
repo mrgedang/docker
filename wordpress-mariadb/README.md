@@ -6,7 +6,8 @@ Change from mysql to mariadb.
 
 **How to run this code?**
 ```
-~ docker build -t mrsiregar/wordpress-mariadb .
+~ cd wordpress-mariadb
+~ docker-compose up -d
 ```
 
 
