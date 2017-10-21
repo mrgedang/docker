@@ -18,4 +18,4 @@ rvm_ruby_file=
 PAGER=less
 ```
 
-Not all docker images are usable as a service, without modification.
+Not all docker images are usable as services, without modification.
