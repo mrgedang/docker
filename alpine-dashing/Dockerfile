@@ -5,8 +5,10 @@ MAINTAINER Muhammad Romadi Siregar <mromadisiregar@gmail.com>
 RUN apk update
 RUN apk add --no-cache make g++ nodejs libc-dev openssl-dev ruby-dev ruby
 RUN gem install dashing json bundler --no-ri --no-rdoc
+RUN mkdir -p /opt/
+RUN cd /opt/
 RUN dashing new dashboard
-WORKDIR /dashboard
+WORKDIR /opt/dashboard
 RUN echo >> Gemfile
 RUN echo >> Gemfile
 RUN echo "gem 'json'">>Gemfile
