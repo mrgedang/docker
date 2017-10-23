@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+   db:
+     image: mariadb
+     volumes:
+       - db_data:/var/lib/mysql
+     environment:
+       MYSQL_ROOT_PASSWORD: passtest
+       MYSQL_DATABASE: dbtest
+       MYSQL_USER: usertest
+       MYSQL_PASSWORD: passtest
+
+   myweb:
+     depends_on:
+       - db
+     image: mrsiregar/centos-modsecurity:latest
+     ports:
+       - "8000:80"
+     environment:
+      VAR_DB_HOST: db:3306
+      VAR_DB_DATABASE: dbtest
+      VAR_DB_USER: usertest
+      VAR_DB_PASSWORD: passtest
+volumes:
+    db_data:
