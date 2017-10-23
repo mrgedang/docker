@@ -35,4 +35,4 @@ on this server.</p>
 
 ```
 
-Forbidden because mod security not allow numeric Host Header.
+Forbidden because mod security block numeric Host Header.
