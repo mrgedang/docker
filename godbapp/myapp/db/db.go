@@ -18,14 +18,14 @@ type Users struct {
 	Id bson.ObjectId `bson:"_id,omitempty" json:"id"`
 	Nama string `bson:"nama" json:"nama"`
 	Kota string `bson:"kota" json:"kota"`
-	//Keranjang []Keranjang `bson:"keranjang" json:"keranjang"`
+	Keranjang []Keranjang `bson:"keranjang" json:"keranjang"`
 }
-/*
+
 type Keranjang struct {
 	IdBarang bson.ObjectId `bson:"_id,omitempty" json:"id"`
 	NamaBarang string `bson:"namaBarang" json:"namaBarang"`
-	HargaBarang string `bson:"HargaBarang" json:"HargaBarang"`
-}*/
+	HargaBarang string `bson:"hargaBarang" json:"hargaBarang"`
+}
 
 var db *mgo.Database
 
@@ -74,7 +74,6 @@ func GetOne(id string) (*Users, error) {
 // Tambah user
 func Insert(users Users) error {
 	users.Id = bson.NewObjectId()
-	//users.Keranjang.IdBarang = bson.NewObjectId()
 	return collectionUsers().Insert(users)
 }
 
@@ -87,6 +86,20 @@ func Remove(id string) error {
 	}
 
 	return collectionUsers().Remove(&res)
+}
+
+// Tambah keranjang
+func TambahKeranjang(iduser string, keranjang Keranjang) error {
+	keranjang.IdBarang = bson.NewObjectId()
+	who := bson.M{"_id": bson.ObjectIdHex(iduser)}
+	pushto := bson.M{"$push": bson.M{"keranjang": keranjang}}
+	return collectionUsers().Update(who, pushto)
+}
+
+// Hapus keranjang
+func HapusKeranjang(iduser string, idbarang string) error {
+	pullto := bson.M{"$pull": bson.M{"keranjang": bson.M{"_id": bson.ObjectIdHex(idbarang)}}}
+	return collectionUsers().Update(bson.M{"_id": bson.ObjectIdHex(iduser), "keranjang._id": bson.ObjectIdHex(idbarang)}, pullto)
 }
 
 // Proses counter

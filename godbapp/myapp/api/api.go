@@ -61,6 +61,35 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 	respondWithJson(w, http.StatusOK, map[string]string{"result": "success"})
 }
 
+func AddBarang(w http.ResponseWriter, r *http.Request) {
+	defer r.Body.Close()
+	keranjang := db.Keranjang{}
+	params := mux.Vars(r)
+	id := params["id"]
+	
+	if err := json.NewDecoder(r.Body).Decode(&keranjang); err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid request payload")
+		return
+	}
+
+	if err := db.TambahKeranjang(id, keranjang); err != nil {
+		respondWithError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+	respondWithJson(w, http.StatusCreated, keranjang)
+}
+
+func DelBarang(w http.ResponseWriter, r *http.Request) {
+	params := mux.Vars(r)
+	iduser := params["iduser"]
+	idbarang := params["idbarang"]
+	if err := db.HapusKeranjang(iduser, idbarang); err != nil {
+		respondWithError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+	respondWithJson(w, http.StatusOK, map[string]string{"result": "success"})
+}
+
 func GetAllUser(w http.ResponseWriter, r *http.Request) {
 	all, err := db.GetAllUsers()
 	if err != nil {
@@ -69,4 +98,5 @@ func GetAllUser(w http.ResponseWriter, r *http.Request) {
 	}
 	respondWithJson(w, http.StatusOK, all)
 }
+
 
