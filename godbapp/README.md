@@ -64,6 +64,6 @@ Http method implementation :
 
 ![Remove an item to shopping cart](https://i.imgur.com/C2CytgC.png)
 
-**Add multiple time item on a user will look like it**
+**Add multiple items on a user will look like it**
 
 ![Form of json data after add item multiple times](https://i.imgur.com/S9Zq4Ks.png)
