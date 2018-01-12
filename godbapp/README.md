@@ -37,19 +37,19 @@ Http method implementation :
 
 **Check the counter**
 
-![alt text](https://i.imgur.com/ZM8UbxG.png)
+![Check the counter](https://i.imgur.com/ZM8UbxG.png)
 
 **Create new user**
 
-![alt text](https://i.imgur.com/tiIZ5r3.png)
+![Create new user](https://i.imgur.com/tiIZ5r3.png)
 
 **Get user by id**
 
-![alt text](https://i.imgur.com/07xJq1z.png)
+![Get user by id](https://i.imgur.com/07xJq1z.png)
 
 **Delete user**
 
-![alt text](https://i.imgur.com/NyWcBFC.png)
+![Delete a user](https://i.imgur.com/NyWcBFC.png)
 
 
 ---
@@ -58,8 +58,12 @@ Http method implementation :
 
 **User select an item**
 
-![alt text](https://i.imgur.com/5LTLvZu.png)
+![Add an item to shopping cart](https://i.imgur.com/5LTLvZu.png)
 
 **User remove an item from shopping cart**
 
-![alt text](https://i.imgur.com/C2CytgC.png)
+![Remove an item to shopping cart](https://i.imgur.com/C2CytgC.png)
+
+**Add multiple time item on a user will look like it**
+
+![Form of json data after add item multiple times](https://i.imgur.com/S9Zq4Ks.png)
