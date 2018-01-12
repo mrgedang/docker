@@ -98,9 +98,9 @@ func TambahKeranjang(iduser string, keranjang Keranjang) error {
 
 // Hapus keranjang
 func HapusKeranjang(iduser string, idbarang string) error {
-	who := bson.M{"_id": bson.ObjectIdHex(iduser)}
+	who := bson.M{"_id": bson.ObjectIdHex(iduser), "keranjang._id": bson.ObjectIdHex(idbarang)}
 	pullto := bson.M{"$pull": bson.M{"keranjang": bson.M{"_id": bson.ObjectIdHex(idbarang)}}}
-	return collectionUsers().Update(who, "keranjang._id": bson.ObjectIdHex(idbarang)}, pullto)
+	return collectionUsers().Update(who, pullto)
 }
 
 // Proses counter
