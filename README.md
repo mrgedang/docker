@@ -40,6 +40,7 @@ Kebutuhan Container
 - Libc
 - Library
 
+(_NB: Container yang dimaksud di sini merupakan container dari docker saja._)
 
 **3. Membuat Image Docker**
 
