@@ -2,20 +2,28 @@
 
 **1. Konsep Cloud Computing**
 
-Cloud computing adalah suatu model komputasi untuk memberikan kenyamanan dan on-demand akses jaringan untuk memanfaatkan secara bersama suatu sumber daya komputasi yang terkonfigurasi (misalnya jaringan, server, penyimpanan [Tradisional Harddisk, Network Storage SAN/NAS dll], aplikasi, dan layanan) dengan manajemen yang minimal dan  sumber dayanya bersifat abstrak (virtual) dan diberikan sebagai layanan di jaringan/internet melalui mekanisme tertentu.
+Cloud computing adalah suatu model komputasi untuk memberikan kenyamanan dan on-demand akses jaringan 
+untuk memanfaatkan secara bersama suatu sumber daya komputasi yang terkonfigurasi (misalnya jaringan, server, 
+penyimpanan [Tradisional Harddisk, Network Storage SAN/NAS dll], aplikasi, dan layanan) dengan manajemen 
+yang minimal dan  sumber dayanya bersifat abstrak (virtual) dan diberikan sebagai layanan di jaringan/internet 
+melalui mekanisme tertentu.
 
 ![Piramida](https://i.imgur.com/UfhfaFQ.png)
 
 Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 
-	- ~~SaaS~~
-	Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, misalnya (email, facebook, twitter, dll).
+	- SaaS
+	Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, 
+	misalnya (email, facebook, twitter, dll).
 
-	- **__PaaS__** ---> __Docker__ 
-	Platform as a service merupakan bentuk cloud computing yang menyediakan layanan dalam bentuk platform atau lingkungan yang didesain untuk developer, misal (google appspot, firebase, dll). Pada kuliah ini, dilakukan pendalaman pembuatan cloud computing jenis ini dengan menggunakan __docker__.
+	- PaaS ---> __Docker__ 
+	Platform as a service merupakan bentuk cloud computing yang menyediakan layanan dalam bentuk 
+	platform atau lingkungan yang didesain untuk developer, misal (google appspot, firebase, dll). 
+	Pada kuliah ini, dilakukan pendalaman pembuatan cloud computing jenis ini dengan menggunakan __docker__.
 
-	- ~~IaaS~~
-	Layanan yang diberikan oleh model layanan ini adalah hardware atau segala sesuatu yang bisa dipakai untuk membangun cloud computing tersebut (storage, network, server).
+	- IaaS
+	Layanan yang diberikan oleh model layanan ini adalah hardware atau segala sesuatu yang bisa dipakai 
+	untuk membangun cloud computing tersebut (storage, network, server).
 
 
 **2. Container (Docker)**
