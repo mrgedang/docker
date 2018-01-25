@@ -64,14 +64,14 @@ _Docker is "an open source project to pack, ship, and run any application as a l
 
 Compose adalah alat yang digunakan untuk mendefinisikan dan menjalankan _multiple docker container_.
 
-	Membuat service dengan compose
+Membuat service dengan compose
 
-	- **github**
+- **github**
 
-		- [flask-sqlite3](https://github.com/mromadisiregar/docker/tree/master/flask-sqlite3)
-		- [wordpress-mariadb](https://github.com/mromadisiregar/docker/tree/master/wordpress-mariadb)
-		- [compose-with-own-image](https://github.com/mromadisiregar/docker/tree/master/compose-with-own-image)
-		- [godbapp](https://github.com/mromadisiregar/docker/tree/master/godbapp)
+	- [flask-sqlite3](https://github.com/mromadisiregar/docker/tree/master/flask-sqlite3)
+	- [wordpress-mariadb](https://github.com/mromadisiregar/docker/tree/master/wordpress-mariadb)
+	- [compose-with-own-image](https://github.com/mromadisiregar/docker/tree/master/compose-with-own-image)
+	- [godbapp](https://github.com/mromadisiregar/docker/tree/master/godbapp)
 
 
 **5. Docker Swarm**
