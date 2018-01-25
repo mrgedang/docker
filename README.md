@@ -12,18 +12,18 @@ melalui mekanisme tertentu.
 
 Ada 3 jenis layanan yang bisa disediakan oleh cloud computing
 
-	- SaaS
-	Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, 
-	misalnya (email, facebook, twitter, dll).
+- SaaS
+Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, 
+misalnya (email, facebook, twitter, dll).
 
-	- PaaS ---> _Docker_
-	Platform as a service merupakan bentuk cloud computing yang menyediakan layanan dalam bentuk 
-	platform atau lingkungan yang didesain untuk developer, misal (google appspot, firebase, dll). 
-	Pada kuliah ini, dilakukan pendalaman pembuatan cloud computing jenis ini dengan menggunakan docker.
+- PaaS ---> _Docker_
+Platform as a service merupakan bentuk cloud computing yang menyediakan layanan dalam bentuk 
+platform atau lingkungan yang didesain untuk developer, misal (google appspot, firebase, dll). 
+Pada kuliah ini, dilakukan pendalaman pembuatan cloud computing jenis ini dengan menggunakan docker.
 
-	- IaaS
-	Layanan yang diberikan oleh model layanan ini adalah hardware atau segala sesuatu yang bisa dipakai 
-	untuk membangun cloud computing tersebut (storage, network, server).
+- IaaS
+Layanan yang diberikan oleh model layanan ini adalah hardware atau segala sesuatu yang bisa dipakai 
+untuk membangun cloud computing tersebut (storage, network, server).
 
 
 **2. Container (Docker)**
@@ -32,10 +32,10 @@ _Docker is "an open source project to pack, ship, and run any application as a l
 	
 ![VM vs DOCKER](https://i.imgur.com/8Rnaskj.png)
 
-	Kebutuhan Container
-	- Kernel
-	- Libc
-	- Library
+Kebutuhan Container
+- Kernel
+- Libc
+- Library
 
 
 **3. Membuat Image Docker**
@@ -62,7 +62,7 @@ _Docker is "an open source project to pack, ship, and run any application as a l
 
 **4. Docker Compose**
 
-Compose adalah alat yang digunakan untuk mendefinisikan dan menjalankan _multiple docker container_.
+Compose adalah alat yang digunakan untuk mendefinisikan dan menjalankan _"multiple docker container"_.
 
 Membuat service dengan compose
 
@@ -80,12 +80,25 @@ _Docker Swarm is a clustering and scheduling tool for Docker containers.
 With Swarm, IT administrators and developers can establish and manage a 
 cluster of Docker nodes as a single virtual system._
 
-		- Clustering
+Docker swarm merupakan mode dari docker yang khusus digunakan untuk membangun cluster
+dari beberapa _docker container_. Di dalam cluster ini terdapat dua buah node yang bisa
+dibentuk, yaitu _manager_ dan _worker_. Manager bertugas mengendalikan dari worker yang
+ter-register di dalamnya. Worker bertugas membuat instance dari service yang dibuat 
+melalui node master.
+
 
 **6. Minikube**
 
-Minikube adalah miniatur dari kubernetes.
+Minikube adalah miniatur dari kubernetes. Dengan minikube dapat dijalankan _"single-node"_ cluster kubernetes
+pada mesin virtual.
 
 **7. Unikernel**
 
+_Unikernels are specialised, single-address-space machine images constructed by using library operating systems._
+
 ![Unikernel](https://i.imgur.com/i0RcHcz.png)
+
+Ketika sebuah servis didesain mengimplementasikan unikernel, maka hal yang didapatkan adalah _kecilnya kemungkinan
+munculnya isu keamanan_ dan otomatis akan mempersulit pihak luar untuk mendapatkan informasi tentang servis
+dan resource yang digunakan. Seperti terlihat pada gambar desain unikernel, aplikasi langsung dijalankan sebagai
+service sekaligus _(pada umumnya servis dan aplikasi adalah dua hal yang berbeda)_.
