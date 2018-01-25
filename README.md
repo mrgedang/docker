@@ -10,7 +10,7 @@ melalui mekanisme tertentu.
 
 ![Piramida](https://i.imgur.com/UfhfaFQ.png)
 
-Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
+Ada 3 jenis layanan yang bisa disediakan oleh cloud computing
 
 	- SaaS
 	Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, 
