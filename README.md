@@ -84,4 +84,8 @@ cluster of Docker nodes as a single virtual system._
 
 **6. Minikube**
 
+Minikube adalah miniatur dari kubernetes.
+
 **7. Unikernel**
+
+![Unikernel](https://i.imgur.com/i0RcHcz.png)
