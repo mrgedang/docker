@@ -13,15 +13,18 @@ melalui mekanisme tertentu.
 Ada 3 jenis layanan yang bisa disediakan oleh cloud computing
 
 - SaaS
+
 Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, 
 misalnya (email, facebook, twitter, dll).
 
 - PaaS ---> _Docker_
+
 Platform as a service merupakan bentuk cloud computing yang menyediakan layanan dalam bentuk 
 platform atau lingkungan yang didesain untuk developer, misal (google appspot, firebase, dll). 
 Pada kuliah ini, dilakukan pendalaman pembuatan cloud computing jenis ini dengan menggunakan docker.
 
 - IaaS
+
 Layanan yang diberikan oleh model layanan ini adalah hardware atau segala sesuatu yang bisa dipakai 
 untuk membangun cloud computing tersebut (storage, network, server).
 
