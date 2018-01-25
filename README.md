@@ -49,9 +49,9 @@ Kebutuhan Container
 	- [alpine-dashing](https://github.com/mromadisiregar/docker/tree/master/alpine-dashing) - _Dashing pada alpine linux._
 	- [centos-modsecurity](https://github.com/mromadisiregar/docker/tree/master/centos-modsecurity) - _Mencoba penggunaan entrypoint pada centos dengan apache + modsecurity._
 	- [goproxy](https://github.com/mromadisiregar/docker/tree/master/goproxy) - _Simple proxy forwarder._
-	- [nginx-test-config](https://github.com/mromadisiregar/docker/tree/master/nginx-test-config) - _Test konfigurasi nginx_
+	- [nginx-test-config](https://github.com/mromadisiregar/docker/tree/master/nginx-test-config) - _Test konfigurasi nginx._
 	- [php-limonade](https://github.com/mromadisiregar/docker/tree/master/php-limonade) - _Mencoba membangun REST dengan php-limonade._
-	- [single-proc](https://github.com/mromadisiregar/docker/tree/master/single-proc) - _Percobaan membuat image terkecil_
+	- [single-proc](https://github.com/mromadisiregar/docker/tree/master/single-proc) - _Percobaan membuat image terkecil._
 
 - **dockerhub**
 
@@ -105,4 +105,5 @@ _Unikernels are specialised, single-address-space machine images constructed by 
 Ketika sebuah servis didesain mengimplementasikan unikernel, maka hal yang didapatkan adalah _kecilnya kemungkinan
 munculnya isu keamanan_ dan otomatis akan mempersulit pihak luar untuk mendapatkan informasi tentang servis
 dan resource yang digunakan. Seperti terlihat pada gambar desain unikernel, aplikasi langsung dijalankan sebagai
-service sekaligus _(pada umumnya servis dan aplikasi adalah dua hal yang berbeda)_.
+service sekaligus _(pada umumnya servis dan aplikasi adalah dua hal yang berbeda)_. Atau dengan kata lain, unikernel
+hanya berisi library yang dibutuhkan aplikasi saja.
