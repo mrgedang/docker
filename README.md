@@ -27,9 +27,8 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing
 
 
 **2. Container (Docker)**
-``
+
 _Docker is "an open source project to pack, ship, and run any application as a lightweight container."_
-``
 	
 ![VM vs DOCKER](https://i.imgur.com/8Rnaskj.png)
 
