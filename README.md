@@ -1,6 +1,7 @@
 ## Tekonologi Cloud Computing
 
 **1. Konsep Cloud Computing**
+
 Cloud computing adalah suatu model komputasi untuk memberikan kenyamanan dan on-demand akses jaringan untuk memanfaatkan secara bersama suatu sumber daya komputasi yang terkonfigurasi (misalnya jaringan, server, penyimpanan [Tradisional Harddisk, Network Storage SAN/NAS dll], aplikasi, dan layanan) dengan manajemen yang minimal dan  sumber dayanya bersifat abstrak (virtual) dan diberikan sebagai layanan di jaringan/internet melalui mekanisme tertentu.
 
 ![Piramida](https://i.imgur.com/UfhfaFQ.png)
@@ -28,7 +29,9 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 
 
 **3. Membuat Image Docker**
+
 **- github**
+
 	- [alpine-dashing](https://github.com/mromadisiregar/docker/tree/master/alpine-dashing) - __Dashing pada alpine linux.__ 
 	- [centos-modsecurity](https://github.com/mromadisiregar/docker/tree/master/centos-modsecurity) - __Mencoba penggunaan entrypoint pada centos dengan apache + modsecurity.__
 	- [goproxy](https://github.com/mromadisiregar/docker/tree/master/goproxy) - __Simple proxy forwarder.__
@@ -37,6 +40,7 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 	- [single-proc](https://github.com/mromadisiregar/docker/tree/master/single-proc) - __Percobaan membuat image terkecil__
 
 **- dockerhub**
+
 	- [alpine-dashing](https://hub.docker.com/r/mrsiregar/alpine-dashing/)
 	- [centos-modsecurity](https://hub.docker.com/r/mrsiregar/centos-modsecurity/)
 	- [goproxy](https://hub.docker.com/r/mrsiregar/goproxy/)
@@ -47,13 +51,17 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 
 
 **4. Docker Compose**
+
 Compose adalah alat yang digunakan untuk mendefinisikan dan menjalankan __multiple docker container__.
 	Membuat service dengan compose
+
 	**- github**
+
 		- 
 
 
 **5. Docker Swarm**
+
 		- Clustering
 
 **6. Minikube**
