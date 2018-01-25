@@ -16,10 +16,10 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing
 	Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, 
 	misalnya (email, facebook, twitter, dll).
 
-	- PaaS ---> __Docker__ 
+	- PaaS ---> _Docker_
 	Platform as a service merupakan bentuk cloud computing yang menyediakan layanan dalam bentuk 
 	platform atau lingkungan yang didesain untuk developer, misal (google appspot, firebase, dll). 
-	Pada kuliah ini, dilakukan pendalaman pembuatan cloud computing jenis ini dengan menggunakan __docker__.
+	Pada kuliah ini, dilakukan pendalaman pembuatan cloud computing jenis ini dengan menggunakan docker.
 
 	- IaaS
 	Layanan yang diberikan oleh model layanan ini adalah hardware atau segala sesuatu yang bisa dipakai 
@@ -28,7 +28,7 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing
 
 **2. Container (Docker)**
 ``
-__Docker is "an open source project to pack, ship, and run any application as a lightweight container."__
+_Docker is "an open source project to pack, ship, and run any application as a lightweight container."_
 ``
 	
 ![VM vs DOCKER](https://i.imgur.com/8Rnaskj.png)
@@ -43,12 +43,12 @@ __Docker is "an open source project to pack, ship, and run any application as a 
 
 - **github**
 
-	- [alpine-dashing](https://github.com/mromadisiregar/docker/tree/master/alpine-dashing) - __Dashing pada alpine linux.__ 
-	- [centos-modsecurity](https://github.com/mromadisiregar/docker/tree/master/centos-modsecurity) - __Mencoba penggunaan entrypoint pada centos dengan apache + modsecurity.__
-	- [goproxy](https://github.com/mromadisiregar/docker/tree/master/goproxy) - __Simple proxy forwarder.__
-	- [nginx-test-config](https://github.com/mromadisiregar/docker/tree/master/nginx-test-config) - __Test konfigurasi nginx__
-	- [php-limonade](https://github.com/mromadisiregar/docker/tree/master/php-limonade) - __Mencoba membangun REST dengan php-limonade.__
-	- [single-proc](https://github.com/mromadisiregar/docker/tree/master/single-proc) - __Percobaan membuat image terkecil__
+	- [alpine-dashing](https://github.com/mromadisiregar/docker/tree/master/alpine-dashing) - _Dashing pada alpine linux._
+	- [centos-modsecurity](https://github.com/mromadisiregar/docker/tree/master/centos-modsecurity) - _Mencoba penggunaan entrypoint pada centos dengan apache + modsecurity._
+	- [goproxy](https://github.com/mromadisiregar/docker/tree/master/goproxy) - _Simple proxy forwarder._
+	- [nginx-test-config](https://github.com/mromadisiregar/docker/tree/master/nginx-test-config) - _Test konfigurasi nginx_
+	- [php-limonade](https://github.com/mromadisiregar/docker/tree/master/php-limonade) - _Mencoba membangun REST dengan php-limonade._
+	- [single-proc](https://github.com/mromadisiregar/docker/tree/master/single-proc) - _Percobaan membuat image terkecil_
 
 - **dockerhub**
 
@@ -63,15 +63,23 @@ __Docker is "an open source project to pack, ship, and run any application as a 
 
 **4. Docker Compose**
 
-Compose adalah alat yang digunakan untuk mendefinisikan dan menjalankan __multiple docker container__.
+Compose adalah alat yang digunakan untuk mendefinisikan dan menjalankan _multiple docker container_.
+
 	Membuat service dengan compose
 
 	- **github**
 
-		- 
+		- [flask-sqlite3](https://github.com/mromadisiregar/docker/tree/master/flask-sqlite3)
+		- [wordpress-mariadb](https://github.com/mromadisiregar/docker/tree/master/wordpress-mariadb)
+		- [compose-with-own-image](https://github.com/mromadisiregar/docker/tree/master/compose-with-own-image)
+		- [godbapp](https://github.com/mromadisiregar/docker/tree/master/godbapp)
 
 
 **5. Docker Swarm**
+
+_Docker Swarm is a clustering and scheduling tool for Docker containers. 
+With Swarm, IT administrators and developers can establish and manage a 
+cluster of Docker nodes as a single virtual system._
 
 		- Clustering
 
