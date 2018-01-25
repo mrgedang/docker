@@ -7,6 +7,7 @@ Cloud computing adalah suatu model komputasi untuk memberikan kenyamanan dan on-
 ![Piramida](https://i.imgur.com/UfhfaFQ.png)
 
 Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
+
 	- ~~SaaS~~
 	Software as a service merupakan bentuk cloud computing yang berwujud aplikasi siap pakai, misalnya (email, facebook, twitter, dll).
 
@@ -18,7 +19,9 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 
 
 **2. Container (Docker)**
-``__Docker is "an open source project to pack, ship, and run any application as a lightweight container."__``
+``
+__Docker is "an open source project to pack, ship, and run any application as a lightweight container."__
+``
 	
 ![VM vs DOCKER](https://i.imgur.com/8Rnaskj.png)
 
@@ -30,7 +33,7 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 
 **3. Membuat Image Docker**
 
-**- github**
+- **github**
 
 	- [alpine-dashing](https://github.com/mromadisiregar/docker/tree/master/alpine-dashing) - __Dashing pada alpine linux.__ 
 	- [centos-modsecurity](https://github.com/mromadisiregar/docker/tree/master/centos-modsecurity) - __Mencoba penggunaan entrypoint pada centos dengan apache + modsecurity.__
@@ -39,7 +42,7 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 	- [php-limonade](https://github.com/mromadisiregar/docker/tree/master/php-limonade) - __Mencoba membangun REST dengan php-limonade.__
 	- [single-proc](https://github.com/mromadisiregar/docker/tree/master/single-proc) - __Percobaan membuat image terkecil__
 
-**- dockerhub**
+- **dockerhub**
 
 	- [alpine-dashing](https://hub.docker.com/r/mrsiregar/alpine-dashing/)
 	- [centos-modsecurity](https://hub.docker.com/r/mrsiregar/centos-modsecurity/)
@@ -55,7 +58,7 @@ Ada 3 jenis layanan yang bisa disediakan oleh cloud computing :
 Compose adalah alat yang digunakan untuk mendefinisikan dan menjalankan __multiple docker container__.
 	Membuat service dengan compose
 
-	**- github**
+	- **github**
 
 		- 
 
