@@ -1,4 +1,4 @@
-## Tekonologi Cloud Computing
+## Teknologi Cloud Computing
 
 **1. Konsep Cloud Computing**
 
@@ -6,7 +6,7 @@ Cloud computing adalah suatu model komputasi untuk memberikan kenyamanan dan on-
 untuk memanfaatkan secara bersama suatu sumber daya komputasi yang terkonfigurasi (misalnya jaringan, server, 
 penyimpanan [Tradisional Harddisk, Network Storage SAN/NAS dll], aplikasi, dan layanan) dengan manajemen 
 yang minimal dan  sumber dayanya bersifat abstrak (virtual) dan diberikan sebagai layanan di jaringan/internet 
-melalui mekanisme tertentu.
+melalui mekanisme tertentu. _(NIST Amerika Serikat dan menurut Onno W Purbo)_
 
 ![Piramida](https://i.imgur.com/UfhfaFQ.png)
 
@@ -72,10 +72,10 @@ Membuat service dengan compose
 
 - **github**
 
-	- [flask-sqlite3](https://github.com/mromadisiregar/docker/tree/master/flask-sqlite3)
-	- [wordpress-mariadb](https://github.com/mromadisiregar/docker/tree/master/wordpress-mariadb)
-	- [compose-with-own-image](https://github.com/mromadisiregar/docker/tree/master/compose-with-own-image)
-	- [godbapp](https://github.com/mromadisiregar/docker/tree/master/godbapp)
+	- [flask-sqlite3](https://github.com/mromadisiregar/docker/tree/master/flask-sqlite3) - _Satu counter container dijalankan dengan compose._
+	- [wordpress-mariadb](https://github.com/mromadisiregar/docker/tree/master/wordpress-mariadb) - _Implementasi wordpress dengan mariadb._
+	- [compose-with-own-image](https://github.com/mromadisiregar/docker/tree/master/compose-with-own-image) - _Mencoba menerapkan entrypoint pada image._
+	- [godbapp](https://github.com/mromadisiregar/docker/tree/master/godbapp) - _RESTful web service dengan golang dan mongodb, untuk melayani penyimpanan data._
 
 
 **5. Docker Swarm**
